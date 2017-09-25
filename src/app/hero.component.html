@@ -1,0 +1,19 @@
+<h3>My Heroes</h3>
+<div class="search">
+  <label>Add Hero: </label>
+  <label><input placeholder="hero" #heroName/></label>
+  <button (click)="addHero(heroName.value); heroName.value=''">Add</button>
+</div>
+<ul>
+  <!-- ngFor: 告诉 Angular 为heroes列表中的每个英雄生成一个<li>标签。 -->
+  <li *ngFor='let hero of heroes' placeholder='name' (click)='onSelected(hero)' [class.selected]="hero===selectedHero">
+    <span class='id'>{{hero.id}}</span>
+    <span class='name'>{{hero.name}}</span>
+    <label class='delete' (click)='onDelete(hero); $event.stopPropagation'>X</label>
+  </li>
+</ul>
+<!-- ngIf: 表示只有在选择的英雄存在时，才会包含HeroDetail组件 -->
+<div *ngIf='selectedHero'>
+  <h2>{{selectedHero.name | uppercase}} is my hero</h2>
+  <button (click)='gotoDetail()'>View Detail</button>
+</div>

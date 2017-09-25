@@ -1,0 +1,91 @@
+nav a {
+    display: inline-block;
+    padding-right: 20px;
+}
+a.top_heroes {
+    display: inline-block;
+    background-color: #aaa;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+}
+dl {
+    background-color: #aaa;
+    border: 1px solid #222;
+    width:350px;
+}
+dd, dt {
+    display:inline-block;
+    width:100px;
+    height: 50px;
+    line-height: 50px;
+}
+dt {
+    padding-left: 10px;
+}
+button {
+    padding: 5px 15px;
+    background-color: #008;
+    border: 0px;
+    margin: 15px;
+    color: #fff;
+
+}
+label.delete {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background: #ccc;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    margin-left: -5px;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    display: block;
+    cursor: pointer;
+}
+li.selected {
+    padding-left: 20px;
+}
+li span.id {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #888;
+    border-radius: 3px;
+}
+li span.name {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 15px;
+    margin-left: -7px;
+    background-color: #ccc;
+    border-radius: 3px;
+}
+
+div.search {
+    margin: 15px 0px;
+}
+.search label {
+    display:inline-block;
+    width: 130px;
+    height: 50px;
+    line-height: 50px;
+}
+input {
+    height: 19px;
+    padding-left: 5px;
+}

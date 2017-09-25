@@ -1,0 +1,9 @@
+<div class='search'>
+    <label>Hero Search: </label>
+    <label><input #searchHero placeholder="name" (keyup)='search(searchHero.value)' /></label>
+    <ul>
+        <li *ngFor='let hero of heroes | async' (click)='gotoDetail(hero)'>
+            <label>{{hero.name}}</label>
+        </li>
+    </ul>
+</div>
